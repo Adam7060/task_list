@@ -1,1 +1,25 @@
+.main {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(125,126,125,1) 0%,rgba(125,126,125,1) 100%,rgba(14,14,14,1) 100%);
+  min-height: 100vh;
+  font-family: Roboto;
 
+}
+
+header {
+  padding-top: 5vw;
+}
+
+h1 {
+  margin-top: 0;
+}
+h1:hover {
+  cursor: default;
+}
+
+.flexbox + hr {
+  width: 90%;
+  border: 1px solid darkgrey;
+  margin: 50px auto;
+
+}

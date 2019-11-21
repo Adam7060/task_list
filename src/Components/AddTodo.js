@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-
+import './AddTodo.css';
 
 function AddTodo(props) {
   const [title, setTitle] = useState ("")
 
   return (
-    <div>
-      <input type="text" placeholder="Tittle" onChange={e => {
+  <div className="flexbox">
+
+      <input className="title-field" type="text" placeholder="Title..." onChange={e => {
           setTitle(e.target.value)
         }} />
-      <button onClick={e => props.letmeknow(title)} >Add</button>
-    </div>
+      <button className="btn-add" onClick={e => props.letmeknow(title)} >Add</button>
+
+  </div>
   );
 
 }

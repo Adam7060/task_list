@@ -8,12 +8,13 @@ function App() {
  const [todo, settodo] = useState([])
 
   return (
-    <div>
+    <div className="main">
       <header>
         <h1>Todo App</h1>
-        <AddTodo letmeknow={e => settodo([...todo, e])} />
-        <TodoList todolist={todo} />
       </header>
+      <AddTodo letmeknow={e => settodo([...todo, e])} />
+      <hr />
+      <TodoList todolist={todo} />
     </div>
   );
 }

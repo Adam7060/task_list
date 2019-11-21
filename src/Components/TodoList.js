@@ -1,18 +1,22 @@
 import React from 'react';
-
+import './TodoList.css';
 
 function TodoList(props) {
 
   return (
     <div>
-      <ul>
-      {props.todolist.map( (todotitle, key) => {
-        console.log("key", key)
-        return  <li key={key}>{todotitle}</li>
 
-       })}
+      <ul className="todolist">
+      {props.todolist.map( (title, key) => {
+        return(
+          <React.Fragment>
+            <li key={key}>{title}</li><hr />
+          </React.Fragment>
+        )})}
       </ul>
+
     </div>
+
   );
 
 }
